@@ -375,7 +375,7 @@ header {
       text-align: center;
       font-family: arial; }
 
-.quienes_somos__info div {
+.quienes_somos__info ul {
   height: 800px;
   list-style: none;
   display: grid;
@@ -490,7 +490,7 @@ header {
   /* Quienes Somos */
   .quienes_somos .quienes_somos__subtitle p {
     width: 70vw; }
-  .quienes_somos__info div {
+  .quienes_somos__info ul {
     height: 1250px;
     list-style: none;
     display: grid;
