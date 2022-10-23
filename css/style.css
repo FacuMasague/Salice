@@ -179,7 +179,6 @@ header {
     margin-bottom: 60px; }
 
 .contacto__info {
-  list-style: none;
   height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,7 +189,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  list-style: none; }
 
 .contacto__info--left {
   grid-area: contacto_left; }
