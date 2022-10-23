@@ -17,7 +17,7 @@ body {
 
 @font-face {
   font-family: letraVerde;
-  src: url(../assets/fonts/Montserrat/static/Montserrat-Black.ttf); }
+  src: url(../assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf); }
 
 @font-face {
   font-family: letraSubTitulo;
@@ -42,6 +42,7 @@ header {
     align-items: center; }
     header .header__nav li a {
       font-family: letraVerde;
+      font-size: 1.25rem;
       text-decoration: none;
       color: #78C232; }
 
