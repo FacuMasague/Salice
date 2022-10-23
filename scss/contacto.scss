@@ -20,6 +20,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "contacto_left contacto_right";
+    ul{
+        padding: 0;
+    }
 }
 
 .contacto__info--left,

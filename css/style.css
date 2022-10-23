@@ -52,11 +52,6 @@ header {
       font-family: letraVerde;
       color: white; }
 
-.main__index {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "index_img" "index_info" "beneficios"; }
-
 .index__img {
   grid-area: index_img; }
   .index__img img {
@@ -87,6 +82,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; }
     .beneficios .beneficios__lista ul {
+      padding: 0;
       height: 200px;
       display: flex;
       flex-direction: column;
@@ -183,6 +179,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "contacto_left contacto_right"; }
+  .contacto__info ul {
+    padding: 0; }
 
 .contacto__info--left,
 .contacto__info--right {
@@ -249,10 +247,12 @@ header {
 
 .mascotas__nutricion__info {
   height: 250px;
-  list-style: none;
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-areas: "nutricion_left nutricion_center nutricion_right"; }
+  .mascotas__nutricion__info ul {
+    padding: 0;
+    list-style: none; }
 
 .mascotas__nutricion__info--left {
   grid-area: nutricion_left; }
@@ -309,6 +309,9 @@ header {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-areas: "salud_left salud_center salud_right"; }
+  .mascotas__salud__info ul {
+    padding: 0;
+    list-style: none; }
 
 .mascotas__salud__info--left {
   grid-area: salud_left; }
@@ -463,6 +466,7 @@ header {
       width: 128.45px; }
   .navbar-nav {
     background-color: white;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -475,7 +479,7 @@ header {
   .beneficios__lista {
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr 1fr !important; }
-    .beneficios__lista ul {
+    .beneficios__lista div {
       height: 250px !important; }
   /* Contacto */
   .contacto__info {
@@ -531,10 +535,11 @@ header {
   .index__info {
     margin-top: 20px;
     flex-direction: column;
-    align-items: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     height: 400px; }
-    .index__info ul {
-      width: 70%; }
+    .index__info div {
+      width: 100%; }
   .beneficios__lista {
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important; }
@@ -584,3 +589,8 @@ header {
   .quienes_somos__texto1 p,
   .quienes_somos__texto2 p {
     width: 90%; } }
+
+@media (max-width: 345px) {
+  /* Mascotas */
+  .mascotas__salud__info {
+    height: 420px; } }

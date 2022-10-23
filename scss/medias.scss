@@ -51,6 +51,7 @@
 
     .navbar-nav{
         background-color: white;
+        border-radius: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -72,7 +73,7 @@
     .beneficios__lista{
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: 1fr 1fr 1fr !important;
-        ul{
+        div{
             height: 250px !important;
         }
     }
@@ -175,10 +176,11 @@
     .index__info{
         margin-top: 20px;
         flex-direction: column;
-        align-items: space-evenly;
+        justify-content: space-around;
+        align-items: center;
         height: 400px;
-        ul{
-            width: 70%;
+        div{
+            width: 100%;
         }
     }
 
@@ -280,4 +282,13 @@
             width: 90%;
         }
     }
+}
+
+@media (max-width: 345px) {
+    /* Mascotas */
+
+    .mascotas__salud__info{
+        height: 420px;
+    }
+
 }
