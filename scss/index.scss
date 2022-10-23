@@ -37,16 +37,16 @@
     }
     .beneficios__lista{
         margin-top: $margin/2;
-        list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        div{
+        ul{
             height: 200px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            list-style: none;
             li{
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;

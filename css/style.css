@@ -83,20 +83,20 @@ header {
     font-size: 2rem; }
   .beneficios .beneficios__lista {
     margin-top: 30px;
-    list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; }
-    .beneficios .beneficios__lista div {
+    .beneficios .beneficios__lista ul {
       height: 200px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      align-items: center; }
-      .beneficios .beneficios__lista div li {
+      align-items: center;
+      list-style: none; }
+      .beneficios .beneficios__lista ul li {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center; }
-        .beneficios .beneficios__lista div li img {
+        .beneficios .beneficios__lista ul li img {
           height: 125px; }
 
 /* Alimentos */
