@@ -463,8 +463,6 @@ header {
       width: 128.45px; }
   .navbar-nav {
     background-color: white;
-    width: 20%;
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -477,7 +475,7 @@ header {
   .beneficios__lista {
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr 1fr !important; }
-    .beneficios__lista div {
+    .beneficios__lista ul {
       height: 250px !important; }
   /* Contacto */
   .contacto__info {
@@ -535,7 +533,7 @@ header {
     flex-direction: column;
     align-items: space-evenly;
     height: 400px; }
-    .index__info div {
+    .index__info ul {
       width: 70%; }
   .beneficios__lista {
     grid-template-columns: 1fr !important;
