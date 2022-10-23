@@ -27,10 +27,13 @@
 
 .mascotas__nutricion__info{
     height: 250px;
-    list-style: none;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-areas:"nutricion_left nutricion_center nutricion_right";
+    ul{
+        padding: 0;
+        list-style: none;
+    }
 }
 
 .mascotas__nutricion__info--left{
@@ -98,6 +101,10 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-areas:"salud_left salud_center salud_right";
+    ul{
+        padding: 0;
+        list-style: none;
+    }
 }
 
 .mascotas__salud__info--left{
