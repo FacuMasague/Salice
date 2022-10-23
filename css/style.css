@@ -376,6 +376,7 @@ header {
       font-family: arial; }
 
 .quienes_somos__info ul {
+  padding: 0;
   height: 800px;
   list-style: none;
   display: grid;
