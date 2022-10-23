@@ -8,7 +8,7 @@ body {
   grid-template-rows: 120px 1fr 450px;
   grid-template-columns: 100%;
   grid-template-areas: "header" "main" "footer"; }
-  body header {
+  body .navbar {
     grid-area: header; }
   body main {
     grid-area: main; }
@@ -23,28 +23,8 @@ body {
   font-family: letraSubTitulo;
   src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf); }
 
-header {
-  display: grid;
-  grid-template-rows: 120px;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-areas: "nav_img nav"; }
-  header .header__img {
-    grid-area: nav_img;
-    text-align: center; }
-    header .header__img img {
-      height: 120px; }
-  header .header__nav {
-    grid-area: nav;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; }
-    header .header__nav li a {
-      font-family: letraVerde;
-      font-size: 1.25rem;
-      text-decoration: none;
-      color: #78C232; }
+.navbar {
+  height: 120px; }
 
 .footer__ondas {
   background-image: url(../assets/images/wave.svg);
@@ -443,10 +423,15 @@ header {
     width: 70%;
     border-radius: 1rem; }
 
-@media (max-width: 769px) {
+@media (min-width: 992px) {
   /* Header */
-  header {
-    grid-template-areas: 0.25fr 1.75fr; }
+  .navbar-brand {
+    width: 50%; }
+    .navbar-brand img {
+      height: 120px;
+      text-align: center; } }
+
+@media (max-width: 769px) {
   /* Index */
   .index__info div {
     width: 40%; }
@@ -503,26 +488,6 @@ header {
 @media (max-width: 426px) {
   body {
     grid-template-rows: 150px 1fr 450px; }
-  /* Header */
-  header {
-    border-bottom: 1px solid black;
-    display: grid;
-    grid-template-rows: 90px 60px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav_img" "nav"; }
-    header .header__img img {
-      height: 90px; }
-    header .header__nav {
-      grid-area: nav;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center; }
-      header .header__nav li a {
-        font-family: letraVerde;
-        text-decoration: none;
-        color: #78C232;
-        font-size: .9rem; }
   /* Index */
   .index__img img {
     width: 100%; }
