@@ -1,0 +1,59 @@
+.main__index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"index_img"
+                        "index_info"
+                        "beneficios";
+}
+
+.index__img{
+    grid-area: index_img;
+    img{
+        width: 100%;
+    }
+}
+
+.index__info{
+    margin-top: $margin/2;
+    margin-bottom: $margin;
+    grid-area: index_info;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    div{
+        width: 30%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.beneficios{
+    grid-area: beneficios;
+    .beneficios__titulo{
+        text-align: center;
+        font-family: letraSubtitulo;
+        font-size: 2rem;
+    }
+    .beneficios__lista{
+        margin-top: $margin/2;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        div{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            li{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                img{
+                    height: 125px;
+                }
+            }
+        }
+    }
+}

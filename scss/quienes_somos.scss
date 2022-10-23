@@ -1,0 +1,103 @@
+.main__quienes_somos{
+    display: grid;
+    grid-template-areas:"quienes_somos_img"
+                        "quienes_somos";
+}
+
+.quienes_somos__img{
+    grid-area: quienes_somos_img;
+    img{
+        width: 100%;
+    }
+}
+
+.quienes_somos{
+    margin-top: $margin/2;
+    width: 100vw;
+    grid-area: quienes_somos;
+    h1{
+        text-align: center;
+        font-family: letraSubtitulo;
+    }
+    .quienes_somos__subtitle{
+        width: 100vw;
+        margin-bottom: $margin;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        p{
+            width: 60%;
+            text-align: center;
+            font-family: arial;
+        }
+    }
+}
+
+.quienes_somos__info{
+    div{
+        height: 800px;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"foto1 texto1"
+                            "texto2 foto2";
+    }
+}
+
+.quienes_somos__foto1{
+    grid-area: foto1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    img{
+        margin-right: 20px;
+        width: 70%;
+        border-radius: 1rem;
+    }
+}
+
+.quienes_somos__texto1{
+    grid-area: texto1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    p{
+        margin-left: 20px;
+        width: 75%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.quienes_somos__texto2{
+    grid-area: texto2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    h2{
+        margin-right: 20px;
+        font-family: letraSubtitulo;
+        width: 75%;
+    }
+    p{
+        margin-right: 20px;
+        width: 75%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.quienes_somos__foto2{
+    grid-area: foto2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    img{
+        margin-left: 20px;
+        width: 70%;
+        border-radius: 1rem;
+    }
+}
