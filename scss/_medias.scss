@@ -254,10 +254,14 @@
 
     /* Contacto */
 
-    .contacto__info--right{
+    .contacto__info--right,
+    .contacto__info--left{
         li{
+            input{
+                padding: 10px 60px 10px 60px !important;
+            }
             textarea{
-                padding: 10px 75px 10px 75px !important;
+                padding: 10px 45px 10px 45px !important;
             }
         }
     }

@@ -579,8 +579,12 @@ header {
   .alimentos__autoservicio__info--center p {
     width: 80%; }
   /* Contacto */
-  .contacto__info--right li textarea {
-    padding: 10px 75px 10px 75px !important; }
+  .contacto__info--right li input,
+  .contacto__info--left li input {
+    padding: 10px 60px 10px 60px !important; }
+  .contacto__info--right li textarea,
+  .contacto__info--left li textarea {
+    padding: 10px 45px 10px 45px !important; }
   /* Mascotas */
   .mascotas__nutricion__info--center li a {
     border-radius: 1rem;
