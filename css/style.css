@@ -196,8 +196,8 @@ header {
 .contacto__info--left {
   grid-area: contacto_left; }
   .contacto__info--left li input {
-    background-color: greenyellow;
-    border-color: greenyellow;
+    background-color: #78C232;
+    border-color: #78C232;
     border-radius: .5rem;
     padding: 10px 100px 10px 100px; }
     .contacto__info--left li input:hover {
@@ -207,8 +207,8 @@ header {
 .contacto__info--right {
   grid-area: contacto_right; }
   .contacto__info--right li textarea {
-    background-color: greenyellow;
-    border-color: greenyellow;
+    background-color: #78C232;
+    border-color: #78C232;
     border-radius: .5rem;
     padding: 10px 100px 10px 100px; }
     .contacto__info--right li textarea:hover {
@@ -221,10 +221,10 @@ header {
   justify-content: center;
   align-items: center; }
   .contacto__boton input {
-    border-color: greenyellow;
+    border-color: #78C232;
     border-radius: 1rem;
     padding: 10px 20px 10px 20px;
-    background-color: greenyellow; }
+    background-color: #78C232; }
     .contacto__boton input:hover {
       background-color: #78C232;
       border-color: #78C232; }

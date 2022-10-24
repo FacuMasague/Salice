@@ -38,8 +38,8 @@
     grid-area: contacto_left;
     li{
         input{
-            background-color: greenyellow;
-            border-color: greenyellow;
+            background-color: $color;
+            border-color: $color;
             border-radius: .5rem;
             padding: 10px 100px 10px 100px;
             &:hover{
@@ -54,8 +54,8 @@
     grid-area: contacto_right;
     li{
         textarea{
-            background-color: greenyellow;
-            border-color: greenyellow;
+            background-color: $color;
+            border-color: $color;
             border-radius: .5rem;
             padding: 10px 100px 10px 100px;
             &:hover{
@@ -72,10 +72,10 @@
     justify-content: center;
     align-items: center;
     input{
-        border-color: greenyellow;
+        border-color: $color;
         border-radius: 1rem;
         padding: 10px 20px 10px 20px;
-        background-color: greenyellow;
+        background-color: $color;
         &:hover{
             background-color: $color;
             border-color: $color;
