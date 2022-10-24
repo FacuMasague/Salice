@@ -463,12 +463,14 @@ header {
     height: 104px;
     width: 120px; }
   .navbar-nav {
-    background-color: white;
+    background-color: #00AD57;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; } }
+    align-items: center; }
+    .navbar-nav li a {
+      font-family: letraVerde; } }
 
 @media (max-width: 769px) {
   /* Index */
