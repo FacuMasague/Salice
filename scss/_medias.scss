@@ -60,6 +60,20 @@
 
 }
 
+@media (max-width: 820px) {
+    
+    /* Contacto */
+
+    .contacto__info{
+        height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"contacto_left"
+                            "contacto_right";
+    }
+
+}
+
 @media (max-width: 769px) {
 
     /* Index */
@@ -76,16 +90,6 @@
         div{
             height: 250px !important;
         }
-    }
-
-    /* Contacto */
-
-    .contacto__info{
-        height: 600px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:"contacto_left"
-                            "contacto_right";
     }
 
     /* Quienes Somos */
@@ -161,6 +165,39 @@
     
 }
 
+@media (max-width: 575.98px) {
+    /* Mascotas */
+
+    .mascotas__nutricion__info--center{
+        li{
+            width: 50%;
+        }
+    }
+
+    .mascotas__salud__info{
+        height: 360px;
+        grid-template-rows: 1fr 110px;
+        grid-template-columns: 1fr;
+        grid-template-areas:"salud_center"
+                            "salud_right";
+    }
+
+    .mascotas__salud__info--left{
+        display: none;
+    }
+
+    .mascotas__salud__info--right{
+        height: 100px;
+        flex-direction: row;
+        li{
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+}
+
 @media (max-width: 426px) {
     body{
         grid-template-rows: 150px 1fr 450px;
@@ -229,32 +266,9 @@
 
     .mascotas__nutricion__info--center{
         li{
-            width: 50%;
             a{
                 border-radius: 1rem;
                 padding: 2.5px 5px 2.5px 5px;
-            }
-        }
-    }
-
-    .mascotas__salud__info{
-        height: 360px;
-        grid-template-rows: 1fr 110px;
-        grid-template-columns: 1fr;
-        grid-template-areas:"salud_center"
-                            "salud_right";
-    }
-
-    .mascotas__salud__info--left{
-        display: none;
-    }
-
-    .mascotas__salud__info--right{
-        height: 100px;
-        flex-direction: row;
-        li{
-            img{
-                width: 80%;
             }
         }
     }
