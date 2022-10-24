@@ -24,11 +24,14 @@ body {
   src: url(../assets/fonts/Montserrat/static/Montserrat-Bold.ttf); }
 
 header {
-  position: fixed;
   width: 100vw; }
 
 .navbar {
   height: 120px; }
+
+.navbar-brand {
+  padding: 0 !important;
+  margin: 0 !important; }
 
 .footer__ondas {
   background-image: url(../assets/images/wave.svg);
@@ -456,15 +459,9 @@ header {
 
 @media (max-width: 991px) {
   /* Header */
-  .navbar-brand {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .navbar-brand img {
-      height: 110px;
-      width: 128.45px; }
+  .navbar-brand img {
+    height: 104px;
+    width: 120px; }
   .navbar-nav {
     background-color: white;
     border-radius: 1rem;

@@ -1,8 +1,12 @@
 header{
-    position: fixed;
     width: 100vw;
 }
 
 .navbar{
     height: 120px;
+}
+
+.navbar-brand{
+    padding: 0 !important;
+    margin: 0 !important;
 }
